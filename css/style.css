@@ -167,6 +167,20 @@ main{
     min-height: 400px;
 }
 
+#about-us{
+    height: 80vh;
+}
+
+#free{
+    height: 50vh;
+    background-color: #9593e6;
+}
+
+
+footer{
+    height: 30vh;
+    background-color: #333333 ;
+}
 /* TABLET */
 
 @media screen and (max-width: 768px){
