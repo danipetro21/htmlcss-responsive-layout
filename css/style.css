@@ -1,0 +1,92 @@
+
+/* general rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+header{
+    background-color: #0084fd;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li{
+    display: inline-block;
+}
+
+#hamburger{
+    display: none;
+    font-size: 40px;
+    color: aliceblue;
+}
+/* MAIN */
+
+main{
+    margin-top: 125px;
+}
+
+/* sezione future */
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #b5ddff;
+    width: calc(100% / 3);
+
+    /* debug */
+    min-height: 200px;
+    border: solid 2px black;
+}
+
+.card.big{
+    width: calc( (100% / 3) * 2 );
+}
+
+/* TABLET */
+
+@media screen and (max-width: 768px){
+    #hamburger{
+        display: block;
+    }
+
+    #menu-desktop{
+        display: none;
+    }
+}
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 480px){
+
+    .cards {
+        display: block;
+    }
+
+    .card, .card.big{
+        width: 100%;
+    }
+
+}
