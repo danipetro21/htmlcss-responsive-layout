@@ -7,10 +7,15 @@
 }
 
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
 
 /* HEADER */
 
@@ -32,6 +37,12 @@ header .container {
 
 header li{
     display: inline-block;
+    margin-right: 20px;
+    
+}
+
+header a:hover{
+    color: red;
 }
 
 #hamburger{
@@ -39,6 +50,7 @@ header li{
     font-size: 40px;
     color: aliceblue;
 }
+
 /* MAIN */
 
 main{
@@ -54,16 +66,66 @@ main{
 
 .card{
     background-color: #b5ddff;
-    width: calc(100% / 3);
-
+    width: calc((100% / 3) - 40px);
+    border-radius: 20px;
+    margin: 10px;
     /* debug */
-    min-height: 200px;
+    min-height: 300px;
     border: solid 2px black;
 }
 
 .card.big{
-    width: calc( (100% / 3) * 2 );
+    width: calc(calc((100% / 3)*2) - 60px);
 }
+
+#plan{
+
+
+    margin-top: 100px;
+    background-color: #9593e6;
+}
+
+.small{
+    width: calc(100% / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+    padding: 30px;
+
+}
+
+.small img{
+    width: 90%;
+}
+
+
+
+
+
+.strategic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    height: 100%;
+    align-self: flex-start;
+    color: white;
+    margin-right: 60px;
+    line-height: 30px;
+    padding: 50px;
+
+}
+.development{
+    width: 45%;
+    align-self: flex-end;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    padding: 50px;
+}
+
 
 /* TABLET */
 
