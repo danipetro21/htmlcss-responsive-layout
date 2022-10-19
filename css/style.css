@@ -17,6 +17,18 @@ a {
     font-size: 17px;
 }
 
+h3{
+    color: #0084fd;
+    font-size: 1.3rem;
+}
+
+.btn{
+    border-radius: 20px;
+    background-color: aliceblue;
+    padding: 10px 20px;
+    color: black;
+}
+
 /* HEADER */
 
 header {
@@ -26,6 +38,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 999;
 }
 
 header .container {
@@ -72,11 +85,39 @@ main {
     margin: 10px;
     /* debug */
     min-height: 300px;
+    text-align: center;
+    
+    
 
+}
+.text-card{
+    width: 100%;
+    padding: 30px;
+    line-height: 35px;
+}
+.card img{
+    width: 100%;
 }
 
 .card.big {
     width: calc(calc((100% / 3)*2) - 20px);
+    display: flex;
+    text-align: left;
+    
+}
+
+.big img{
+    position: relative;
+    bottom:0;
+    align-self: flex-end;
+    width: 350px;
+    padding: 0 70px;
+}
+
+.appstore{
+    background-color: #0084fd;
+    color: white;
+
 }
 
 #plan {
@@ -144,6 +185,9 @@ main {
     min-height: 250px;
     border-radius: 20px;
     margin: 40px 0;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
 }
 
 #benef {
@@ -164,7 +208,18 @@ main {
 
 .white {
     background-color: white;
-
+    text-align: left;
+    font-size: 20px;
+    padding: 50px 20px;
+    line-height: 4rem;
+}
+.white p{
+    color: black;
+    line-height: 25px;
+}
+.white h2{
+    color: #0084fd;
+    font-size: 55px;
 }
 
 
@@ -186,9 +241,14 @@ main {
     font-size: 1rem;
 }
 
-.linkedin img {
-    width: 100%;
+/*classe generale per le immagini rotonde*/
+
+.round{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-right:20px;
 }
 
 #free {
@@ -236,7 +296,18 @@ footer {
 
     .white{
         width: calc(100%/2 - 20px);
+        
     }
+
+    .big{
+        flex-wrap: wrap;
+    }
+
+    .card-testi{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 
 }
 
